@@ -1,0 +1,104 @@
+<html>
+<head>
+	<title>LEARNING</title>
+	<style type="text/css">
+		#one
+		{
+			color:green;
+			background-color:lightgreen;
+		}
+		#total
+		{
+			color:yellow;
+			background-color:pink;
+			width:600px;
+			height:650px;
+			padding:10px;
+			margin-right:100px;
+			margin-left:300px;
+		}
+		#two
+		{
+			color:green;
+			background-color:yellow;	
+		}
+		#three
+		{
+			color:green;
+			background-color:black;
+		}
+		#name
+		{
+			margin-left:20px;
+			margin-right:20px;
+		}
+		img
+		{
+			float:right;
+		}
+		body
+		{
+			background-image:url("car.jpg")
+			
+		}
+	</style>
+</head>
+<body bgcolor="brown">
+	<form action="display" method="POST">
+	<div id="total">
+		<p>
+		<div id="one">
+			<fieldset>
+			<legend>PRIMARY INFORMATION</legend>
+				<label for="name">USERNAME:</label>
+			 	<input type="text" id="name" name="name" placeholder="enter name"><br>
+				<label for="password">PASSWORD:</label>
+				<input type="password" id="name" name="password" placeholder="password"><br>
+				<label for="radio">GENDER:</label>
+				<input type="radio" name="radio" id="radio">MALE
+				<input type="radio" name="radio" id="radio">FEMALE<br>
+				<label for="hobbies">HOBBIES:</label>
+				<input type="checkbox" id="check" name="hobbies">reading
+				<input type="checkbox" id="check" name="hobbies">coding
+				<input type="checkbox" id="check" name="hobbies">music
+			</fieldset>
+		</div>
+		</p>
+		<p>
+		<div id="two">
+			<fieldset>
+				<legend>EDUCATION</legend>
+				<label for="address">ADDRESS:</label>
+				<textarea id="area" name="address" rows="10" cols="50" placeholder="nativeaddress"></textarea><br>
+				<label for="selection">BRANCH:</label>
+					<select>
+						<option>CSE</option><br>
+						<option>MECH</option><br>
+						<option>ECE</option><br>
+						<option>CIVIL</option><br>
+						<option>MME</option><br>
+					</select><br>
+				<label for="email">EMAIL:</label>	
+				<input type="text" id="email" name="email" placeholder="email"><br>
+				<label for="dob">DOB:</label>
+				<input type="date" id="name" name="dob" placeholder="dateofbirth"><br>
+				<label for="question">what color you liked the most?:</label>
+				<input type="color" id="question" name="question"><br>
+				<label for="resume">RESUME:</label>
+				<input type="file" id="name" name="resume">(file should not exceed 2MB)<br>
+			</fieldset>
+		</div>
+		</p>
+		<p>
+		<div id="three">
+			<fieldset>
+				<legend>LAST STEP</legend>
+				<input type="submit" value="SUBMIT" name="button"/>
+				<input type="reset" value="RESET" name="button"/>
+			</fieldset>
+		</div>
+		</p>
+	</div id="total">
+	</form>
+</body>
+</html>
